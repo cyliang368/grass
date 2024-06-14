@@ -14,8 +14,7 @@ MODULES = \
 	seriesmap \
 	reprojection_renderer \
 	utils \
-	timeseriesmap \
-	baseseriesmap
+	timeseriesmap
 
 PYFILES := $(patsubst %,$(DSTDIR)/%.py,$(MODULES) __init__)
 PYCFILES := $(patsubst %,$(DSTDIR)/%.pyc,$(MODULES) __init__)
