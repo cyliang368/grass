@@ -11,7 +11,7 @@ extend-exclude = '''
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-python_files = "*/tests/*_test.py"
+python_files = ["*/tests/*_test.py", "*/testsuite/test_*.py"]
 addopts = """
     --ignore-glob='dist.*'
     --ignore-glob='bin.*'
@@ -19,6 +19,7 @@ addopts = """
     --ignore-glob='*/grass/pygrass/tests/*'
     --doctest-glob='*doctest*.txt'
     --ignore='raster/r.category/test_rcategory_doctest.txt'
+    --ignore="python/grass/gunittest/main.py"
 """
 timeout = 300
 
