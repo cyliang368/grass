@@ -4832,7 +4832,15 @@ rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
 fi
 
 
+# Disable IEEE floating point optimization on ARM chips
+if test "$CC" = "*aarch64*"; then
+  IEEEFLAG="$IEEEFLAG -fno-fast-math"
+fi
+
+
 CFLAGS="$CFLAGS $IEEEFLAG"
+
+{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: ${IEEEFLAG}" >&5
 
 # Set BINDIR
 
@@ -5239,7 +5247,7 @@ ac_save_ldflags="$LDFLAGS"
             LD_LIBRARY_PATH_VAR="PATH"
             ;;
         *-apple-darwin*)
-            SHLIB_CFLAGS="-fno-common -fno-fast-math"
+            SHLIB_CFLAGS="-fno-common"
             SHLIB_SUFFIX=".dylib"
             SHLIB_LD="${CC} -dynamiclib -compatibility_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -current_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -install_name @rpath/lib\${LIB_NAME}\${SHLIB_SUFFIX}"
             SHLIB_LDX="${CXX} -dynamiclib -compatibility_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -current_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -install_name @rpath/lib\${LIB_NAME}\${SHLIB_SUFFIX}"
