@@ -4833,9 +4833,11 @@ fi
 
 
 # Disable IEEE floating point optimization on ARM chips
-if test "$CC" = "(*aarch64*)|(*arm*)"; then
+case "$CC" in
+"(*aarch64*)|(*arm*)")
   IEEEFLAG="$IEEEFLAG -fno-fast-math"
-fi
+  ;;
+esac
 
 
 CFLAGS="$CFLAGS $IEEEFLAG"
