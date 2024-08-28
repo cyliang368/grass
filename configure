@@ -4842,8 +4842,6 @@ esac
 
 CFLAGS="$CFLAGS $IEEEFLAG"
 
-{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: ${IEEEFLAG}" >&5
-
 # Set BINDIR
 
 if test -n "${bindir}"; then
