@@ -4841,12 +4841,6 @@ case $CC in
   ;;
 esac
 
-case $CXX in
-*aarch64* | *arm* )
-  CXXFLAGS="$CXXFLAGS -ffp-mode=full"
-  ;;
-esac
-
 # Set BINDIR
 
 if test -n "${bindir}"; then
