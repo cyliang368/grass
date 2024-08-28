@@ -4831,16 +4831,21 @@ rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
   conftest.$ac_objext conftest.beam conftest.$ac_ext
 fi
 
+CFLAGS="$CFLAGS $IEEEFLAG"
+
 
 # Disable IEEE floating point optimization on ARM chips
 case $CC in
 *aarch64* | *arm* )
-  IEEEFLAG="$IEEEFLAG -fno-fast-math"
+  CFLAGS="$CFLAGS -ffp-mode=full"
   ;;
 esac
 
-
-CFLAGS="$CFLAGS $IEEEFLAG"
+case $CXX in
+*aarch64* | *arm* )
+  CXXFLAGS="$CXXFLAGS -ffp-mode=full"
+  ;;
+esac
 
 # Set BINDIR
 
