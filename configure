@@ -5239,7 +5239,7 @@ ac_save_ldflags="$LDFLAGS"
             LD_LIBRARY_PATH_VAR="PATH"
             ;;
         *-apple-darwin*)
-            SHLIB_CFLAGS="-fno-common"
+            SHLIB_CFLAGS="-fno-common -fno-fast-math"
             SHLIB_SUFFIX=".dylib"
             SHLIB_LD="${CC} -dynamiclib -compatibility_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -current_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -install_name @rpath/lib\${LIB_NAME}\${SHLIB_SUFFIX}"
             SHLIB_LDX="${CXX} -dynamiclib -compatibility_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -current_version \${GRASS_VERSION_MAJOR}.\${GRASS_VERSION_MINOR} -install_name @rpath/lib\${LIB_NAME}\${SHLIB_SUFFIX}"
