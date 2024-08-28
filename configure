@@ -4837,7 +4837,13 @@ CFLAGS="$CFLAGS $IEEEFLAG"
 # Disable IEEE floating point optimization on ARM chips
 case $CC in
 *aarch64* | *arm* )
-  CFLAGS="$CFLAGS -ffp-mode=full"
+  CFLAGS="$CFLAGS -fno-fast-math"
+  ;;
+esac
+
+case $CXX in
+*aarch64* | *arm* )
+  CXXFLAGS="$CXXFLAGS -fno-fast-math"
   ;;
 esac
 
