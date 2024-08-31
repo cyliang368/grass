@@ -13,8 +13,6 @@ Licence:    This program is free software under the GNU General Public
 from grass.gunittest.case import TestCase
 import sys
 
-IS_MAC = sys.platform.startswith("darwin")
-
 
 class TestRasterreport(TestCase):
     input = "lsat7_2002_80"
@@ -49,13 +47,13 @@ class TestRasterreport(TestCase):
         basename = "ASM"
         method = "asm"
         output = f"{method}_{basename}"
-        values = """min=0.104167
+        values = """min=0.10416667163372
         max=1
         mean=0.112871783083256
         variance=0.000158101620160753
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_contrast(self):
         """Testing method contrast"""
@@ -68,7 +66,7 @@ class TestRasterreport(TestCase):
         variance=185767.349118713
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_corr(self):
         """Testing method corr"""
@@ -81,7 +79,7 @@ class TestRasterreport(TestCase):
         variance=0.0306650179549719
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_var(self):
         """Testing method var"""
@@ -94,7 +92,7 @@ class TestRasterreport(TestCase):
         variance=58439.1071892438
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_idm(self):
         """Testing method idm"""
@@ -107,7 +105,7 @@ class TestRasterreport(TestCase):
         variance=0.00497110161251246
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_sa(self):
         """Testing method sa"""
@@ -120,28 +118,20 @@ class TestRasterreport(TestCase):
         variance=31616.3527726298
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_sv(self):
         """Testing method sv"""
         basename = "SV"
         method = "sv"
         output = f"{method}_{basename}"
-        # The results on macOS is slightly different from the other platforms
-        if IS_MAC:
-            values = """min=0
-            max=45368496
-            mean=2248724.38215788
-            variance=2332049495199.41
-            n=996244"""
-        else:
-            values = """min=0
-            max=45368492
-            mean=2248724.35829364
-            variance=2332049431762.5
-            n=996244"""
+        values = """min=0
+        max=45368492
+        mean=2248724.35829364
+        variance=2332049431762.5
+        n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_se(self):
         """Testing method se"""
@@ -154,7 +144,7 @@ class TestRasterreport(TestCase):
         variance=0.0255830167563798
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_entr(self):
         """Testing method entr"""
@@ -167,7 +157,7 @@ class TestRasterreport(TestCase):
         variance=0.0106857128131089
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_dv(self):
         """Testing method dv"""
@@ -180,7 +170,7 @@ class TestRasterreport(TestCase):
         variance=2.37568891441793e-06
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_de(self):
         """Testing method de"""
@@ -193,7 +183,7 @@ class TestRasterreport(TestCase):
         variance=0.055056566141371
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_moc1(self):
         """Testing method moc1"""
@@ -206,7 +196,7 @@ class TestRasterreport(TestCase):
         variance=0.00736236364469843
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_moc2(self):
         """Testing method moc2"""
@@ -219,7 +209,7 @@ class TestRasterreport(TestCase):
         variance=0.000334346005602857
         n=996244"""
         self.assertModule("r.texture", input=self.input, output=method, method=method)
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
 
 if __name__ == "__main__":
