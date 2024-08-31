@@ -50,7 +50,7 @@ class TestRasterreport(TestCase):
         basename = "ASM"
         method = "asm"
         output = f"{method}_{basename}"
-        values = """min=0.104167
+        values = """min=0.10416667163372
         max=1
         mean=0.112871783083256
         variance=0.000158101620160753
@@ -58,7 +58,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_contrast(self):
         """Testing method contrast"""
@@ -73,7 +73,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_corr(self):
         """Testing method corr"""
@@ -88,7 +88,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_var(self):
         """Testing method var"""
@@ -103,7 +103,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_idm(self):
         """Testing method idm"""
@@ -118,7 +118,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_sa(self):
         """Testing method sa"""
@@ -133,7 +133,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_sv(self):
         """Testing method sv"""
@@ -141,22 +141,15 @@ class TestRasterreport(TestCase):
         method = "sv"
         output = f"{method}_{basename}"
         # The results on macOS is slightly different from the other platforms
-        if IS_MAC:
-            values = """min=0
-            max=45368496
-            mean=2248724.38215788
-            variance=2332049495199.41
-            n=996244"""
-        else:
-            values = """min=0
-            max=45368492
-            mean=2248724.35829364
-            variance=2332049431762.5
-            n=996244"""
+        values = """min=0
+        max=45368492
+        mean=2248724.35829364
+        variance=2332049431762.5
+        n=996244"""
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_se(self):
         """Testing method se"""
@@ -171,7 +164,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_entr(self):
         """Testing method entr"""
@@ -186,7 +179,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_dv(self):
         """Testing method dv"""
@@ -201,7 +194,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_de(self):
         """Testing method de"""
@@ -216,7 +209,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_moc1(self):
         """Testing method moc1"""
@@ -231,7 +224,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
     def test_moc2(self):
         """Testing method moc2"""
@@ -246,7 +239,7 @@ class TestRasterreport(TestCase):
         self.assertModule(
             "r.texture", input=self.input, output=method, method=method, nprocs=THREADS
         )
-        self.assertRasterFitsUnivar(output, reference=values, precision=1e-2)
+        self.assertRasterFitsUnivar(output, reference=values, precision=1e-7)
 
 
 if __name__ == "__main__":
