@@ -1,7 +1,7 @@
 MODULE_TOPDIR = ../..
 
 PGM = r.texture
-NFM = -fno-fast-math
+NFM = -ffp-contract=fast
 
 LIBES = $(RASTERLIB) $(GISLIB) $(MATHLIB) $(OPENMP_LIBPATH) $(OPENMP_LIB)
 DEPENDENCIES = $(RASTERDEP) $(GISDEP)
