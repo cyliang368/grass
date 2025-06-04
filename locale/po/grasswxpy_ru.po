@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grasswxpy_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 17:40+0000\n"
+"POT-Creation-Date: 2025-06-04 10:52+0000\n"
 "PO-Revision-Date: 2023-06-28 19:08+0000\n"
 "Last-Translator: Sergey Kazorin <kazorin@basealt.ru>\n"
 "Language-Team: Russian <https://weblate.osgeo.org/projects/grass-gis/grasswxpy/ru/>\n"
@@ -670,7 +670,7 @@ msgid "Animation Toolbar"
 msgstr "Панель инструментов анимации"
 
 #: ../gui/wxpython/animation/frame.py:213 ../gui/wxpython/lmgr/frame.py:188
-#: ../gui/wxpython/main_window/frame.py:597
+#: ../gui/wxpython/main_window/frame.py:598
 #: ../gui/wxpython/mapswipe/frame.py:310
 msgid "Misc Toolbar"
 msgstr "Панель прочих инструментов"
@@ -877,7 +877,7 @@ msgstr "Предупреждение"
 #: ../gui/wxpython/core/gcmd.py:153
 #: ../gui/wxpython/image2target/ii2t_gis_set.py:714
 #: ../gui/wxpython/image2target/ii2t_gis_set.py:760
-#: ../gui/wxpython/lmgr/frame.py:2319 ../gui/wxpython/main_window/frame.py:2417
+#: ../gui/wxpython/lmgr/frame.py:2319 ../gui/wxpython/main_window/frame.py:2427
 msgid "Message"
 msgstr "Сообщение"
 
@@ -899,7 +899,7 @@ msgstr "Ошибка: "
 msgid "Unable to execute command: '%s'"
 msgstr "Не удалось выполнить команду: «%s»"
 
-#: ../gui/wxpython/core/gcmd.py:778 ../gui/wxpython/gui_core/forms.py:2989
+#: ../gui/wxpython/core/gcmd.py:778 ../gui/wxpython/gui_core/forms.py:2992
 #, python-format
 msgid "Error in %s"
 msgstr "Ошибка в %s"
@@ -3768,7 +3768,7 @@ msgstr "Переменные"
 
 #: ../gui/wxpython/gmodeler/frame.py:31 ../gui/wxpython/gmodeler/panels.py:106
 #: ../gui/wxpython/gui_core/forms.py:1500 ../gui/wxpython/lmgr/toolbars.py:208
-#: ../gui/wxpython/main_window/frame.py:906
+#: ../gui/wxpython/main_window/frame.py:907
 msgid "Graphical Modeler"
 msgstr "Средство графического моделирования"
 
@@ -3877,7 +3877,7 @@ msgid "Script editor"
 msgstr "Простой &редактор"
 
 #: ../gui/wxpython/gmodeler/panels.py:194
-#: ../gui/wxpython/gui_core/forms.py:2509
+#: ../gui/wxpython/gui_core/forms.py:2512
 msgid "Command output"
 msgstr "Вывод команды"
 
@@ -3944,7 +3944,7 @@ msgstr "Выбор файла модели"
 
 #: ../gui/wxpython/gmodeler/panels.py:832
 #: ../gui/wxpython/gmodeler/panels.py:890 ../gui/wxpython/lmgr/frame.py:848
-#: ../gui/wxpython/main_window/frame.py:975
+#: ../gui/wxpython/main_window/frame.py:976
 msgid "GRASS Model File (*.gxm)|*.gxm"
 msgstr "Файл модели GRASS (*.gxm)|*.gxm"
 
@@ -4150,7 +4150,7 @@ msgstr ""
 
 #: ../gui/wxpython/gmodeler/panels.py:1615
 #: ../gui/wxpython/gui_core/preferences.py:443
-#: ../gui/wxpython/lmgr/frame.py:650 ../gui/wxpython/main_window/frame.py:720
+#: ../gui/wxpython/lmgr/frame.py:650 ../gui/wxpython/main_window/frame.py:721
 msgid "Python"
 msgstr "Питон"
 
@@ -4177,8 +4177,8 @@ msgid "Update"
 msgstr "Обновление"
 
 #: ../gui/wxpython/gmodeler/panels.py:1722
-#: ../gui/wxpython/gui_core/pyedit.py:398
-#: ../gui/wxpython/gui_core/pyedit.py:469
+#: ../gui/wxpython/gui_core/pyedit.py:400
+#: ../gui/wxpython/gui_core/pyedit.py:471
 msgid "Python script (*.py)|*.py"
 msgstr "Сценарий Python (*.py)|*.py"
 
@@ -4187,18 +4187,18 @@ msgid "JSON file (*.json)|*.json"
 msgstr ""
 
 #: ../gui/wxpython/gmodeler/panels.py:1728
-#: ../gui/wxpython/gui_core/pyedit.py:396
+#: ../gui/wxpython/gui_core/pyedit.py:398
 msgid "Choose file to save"
 msgstr "Выберите файл для сохранения"
 
 #: ../gui/wxpython/gmodeler/panels.py:1749
-#: ../gui/wxpython/gui_core/pyedit.py:416 ../gui/wxpython/wxplot/profile.py:428
+#: ../gui/wxpython/gui_core/pyedit.py:418 ../gui/wxpython/wxplot/profile.py:428
 #, python-format
 msgid "File <%s> already exists. Do you want to overwrite this file?"
 msgstr "Файл <%s> уже существует. Перезаписать существующий файл?"
 
 #: ../gui/wxpython/gmodeler/panels.py:1752
-#: ../gui/wxpython/gui_core/pyedit.py:419
+#: ../gui/wxpython/gui_core/pyedit.py:421
 msgid "Save file"
 msgstr "Сохранить файл"
 
@@ -4286,7 +4286,7 @@ msgid "Height:"
 msgstr "Высота:"
 
 #: ../gui/wxpython/gmodeler/preferences.py:285
-#: ../gui/wxpython/lmgr/frame.py:629 ../gui/wxpython/main_window/frame.py:647
+#: ../gui/wxpython/lmgr/frame.py:629 ../gui/wxpython/main_window/frame.py:648
 #: ../gui/wxpython/nviz/tools.py:114
 msgid "Data"
 msgstr "Данные"
@@ -4804,7 +4804,7 @@ msgid "Optional"
 msgstr "Необязательная"
 
 #: ../gui/wxpython/gui_core/forms.py:1084
-#: ../gui/wxpython/gui_core/forms.py:2313
+#: ../gui/wxpython/gui_core/forms.py:2316
 msgid "Parameterized in model"
 msgstr "Параметризация по модели"
 
@@ -4822,7 +4822,7 @@ msgid "valid range"
 msgstr "допустимый диапазон"
 
 #: ../gui/wxpython/gui_core/forms.py:1379
-#: ../gui/wxpython/gui_core/forms.py:2950
+#: ../gui/wxpython/gui_core/forms.py:2953
 #: ../gui/wxpython/gui_core/toolbars.py:70
 msgid "Select font"
 msgstr "Выбрать шрифт"
@@ -4903,15 +4903,15 @@ msgstr "Тип объекта"
 msgid "Projection match"
 msgstr "Совпадение проекции"
 
-#: ../gui/wxpython/gui_core/forms.py:2519
+#: ../gui/wxpython/gui_core/forms.py:2522
 msgid "Manual"
 msgstr "Вручную"
 
-#: ../gui/wxpython/gui_core/forms.py:2559
+#: ../gui/wxpython/gui_core/forms.py:2562
 msgid "Nothing to load."
 msgstr "Отсутствует файл для загрузки."
 
-#: ../gui/wxpython/gui_core/forms.py:2568
+#: ../gui/wxpython/gui_core/forms.py:2571
 #, python-format
 msgid ""
 "Unable to load file.\n"
@@ -4922,31 +4922,31 @@ msgstr ""
 "\n"
 "Причина: %s"
 
-#: ../gui/wxpython/gui_core/forms.py:2589
+#: ../gui/wxpython/gui_core/forms.py:2592
 #: ../gui/wxpython/modules/colorrules.py:687
 msgid "Nothing to save."
 msgstr "Отсутствуют данные для сохранения."
 
-#: ../gui/wxpython/gui_core/forms.py:2594
+#: ../gui/wxpython/gui_core/forms.py:2597
 msgid "Save input as..."
 msgstr "Сохранить ввод как…"
 
-#: ../gui/wxpython/gui_core/forms.py:2933
+#: ../gui/wxpython/gui_core/forms.py:2936
 msgid "No dataset given."
 msgstr "Набор данных не задан."
 
-#: ../gui/wxpython/gui_core/forms.py:3101
-#: ../gui/wxpython/gui_core/forms.py:3120
+#: ../gui/wxpython/gui_core/forms.py:3104
+#: ../gui/wxpython/gui_core/forms.py:3123
 #, python-format
 msgid "Unable to parse command '%s'"
 msgstr "Не удалось выполнить разбор команды «%s»"
 
-#: ../gui/wxpython/gui_core/forms.py:3128
+#: ../gui/wxpython/gui_core/forms.py:3131
 #, python-format
 msgid "%(cmd)s: parameter '%(key)s' not available"
 msgstr "%(cmd)s: не задан параметр «%(key)s»"
 
-#: ../gui/wxpython/gui_core/forms.py:3214
+#: ../gui/wxpython/gui_core/forms.py:3217
 msgid "Try to set up GRASS_ADDON_PATH or GRASS_ADDON_BASE variable."
 msgstr "Попробуйте задать переменную GRASS_ADDON_PATH or GRASS_ADDON_BASE."
 
@@ -4991,12 +4991,12 @@ msgid "Translation status"
 msgstr "Состояние перевода"
 
 #: ../gui/wxpython/gui_core/ghelp.py:120 ../gui/wxpython/gui_core/ghelp.py:948
-#: ../gui/wxpython/lmgr/frame.py:1462 ../gui/wxpython/main_window/frame.py:1617
+#: ../gui/wxpython/lmgr/frame.py:1462 ../gui/wxpython/main_window/frame.py:1618
 msgid "Unable to get GRASS version\n"
 msgstr "Не удалось получить информацию о версии GRASS\n"
 
 #: ../gui/wxpython/gui_core/ghelp.py:134 ../gui/wxpython/lmgr/frame.py:1489
-#: ../gui/wxpython/main_window/frame.py:1644
+#: ../gui/wxpython/main_window/frame.py:1645
 msgid "unknown version"
 msgstr "неизвестная версия"
 
@@ -5485,13 +5485,13 @@ msgstr "Скрывать вкладку «%s» (требует перезагр�
 
 #: ../gui/wxpython/gui_core/preferences.py:415
 #: ../gui/wxpython/gui_core/preferences.py:1198
-#: ../gui/wxpython/lmgr/frame.py:636 ../gui/wxpython/main_window/frame.py:677
+#: ../gui/wxpython/lmgr/frame.py:636 ../gui/wxpython/main_window/frame.py:678
 #: ../gui/wxpython/mapswipe/toolbars.py:27
 msgid "Tools"
 msgstr "Инструменты"
 
 #: ../gui/wxpython/gui_core/preferences.py:429
-#: ../gui/wxpython/lmgr/frame.py:646 ../gui/wxpython/main_window/frame.py:706
+#: ../gui/wxpython/lmgr/frame.py:646 ../gui/wxpython/main_window/frame.py:707
 #, fuzzy
 msgid "History"
 msgstr "Гистограмма"
@@ -5664,7 +5664,7 @@ msgid "Maximum memory in MB to be used (supported tools only):"
 msgstr ""
 
 #: ../gui/wxpython/gui_core/preferences.py:1351
-#: ../gui/wxpython/lmgr/frame.py:632 ../gui/wxpython/main_window/frame.py:662
+#: ../gui/wxpython/lmgr/frame.py:632 ../gui/wxpython/main_window/frame.py:663
 msgid "Layers"
 msgstr "Слои"
 
@@ -5848,83 +5848,83 @@ msgstr "Владелец"
 msgid "Type command here and press Enter"
 msgstr ""
 
-#: ../gui/wxpython/gui_core/pyedit.py:308
+#: ../gui/wxpython/gui_core/pyedit.py:300
 msgid "Permission denied <{}>. Please change file permission for reading."
 msgstr "В доступе отказано <{}>. Измените разрешение на чтение файла."
 
-#: ../gui/wxpython/gui_core/pyedit.py:315
+#: ../gui/wxpython/gui_core/pyedit.py:307
 msgid "Couldn't read file <{}>."
 msgstr "Не удалось прочитать файл <{}>."
 
-#: ../gui/wxpython/gui_core/pyedit.py:334
+#: ../gui/wxpython/gui_core/pyedit.py:326
 msgid "Permission denied <{}>. Please change file permission for writing.{}"
 msgstr "В разрешении отказано <{}>. Измените разрешения файла на запись.{}"
 
-#: ../gui/wxpython/gui_core/pyedit.py:345
+#: ../gui/wxpython/gui_core/pyedit.py:337
 msgid "Couldn't write file <{}>.{}"
 msgstr "Не удалось прочитать файл <{}>.{}"
 
-#: ../gui/wxpython/gui_core/pyedit.py:359
-#: ../gui/wxpython/gui_core/pyedit.py:369
+#: ../gui/wxpython/gui_core/pyedit.py:361
+#: ../gui/wxpython/gui_core/pyedit.py:371
 #, fuzzy
 #| msgid "Unable to launch Python script. %s"
 msgid " Unable to launch Python script."
 msgstr "Не удалось запустить сценарий Python. %s"
 
-#: ../gui/wxpython/gui_core/pyedit.py:467
+#: ../gui/wxpython/gui_core/pyedit.py:469
 msgid "Open file"
 msgstr "Открыть файл"
 
-#: ../gui/wxpython/gui_core/pyedit.py:509
+#: ../gui/wxpython/gui_core/pyedit.py:511
 #, fuzzy, python-brace-format
 msgid "File <{path}> doesn't exist. It was probably moved or deleted."
 msgstr "Файл <{}> не существует. Вероятно, он был перемещён или удалён."
 
-#: ../gui/wxpython/gui_core/pyedit.py:577
+#: ../gui/wxpython/gui_core/pyedit.py:579
 msgid "Replace the content by the template?"
 msgstr "Заменить содержимое шаблоном?"
 
-#: ../gui/wxpython/gui_core/pyedit.py:579
+#: ../gui/wxpython/gui_core/pyedit.py:581
 msgid "Replace the content by the example?"
 msgstr "Заменить содержимое примером?"
 
-#: ../gui/wxpython/gui_core/pyedit.py:581
+#: ../gui/wxpython/gui_core/pyedit.py:583
 msgid "Replace the current content by the file content?"
 msgstr "Заменить текущее содержимое содержимым файла?"
 
-#: ../gui/wxpython/gui_core/pyedit.py:588
+#: ../gui/wxpython/gui_core/pyedit.py:590
 msgid "Replace content"
 msgstr "Заменить содержимое"
 
-#: ../gui/wxpython/gui_core/pyedit.py:601
+#: ../gui/wxpython/gui_core/pyedit.py:603
 msgid "Set parameters for the script"
 msgstr "Ввод параметров для сценария"
 
-#: ../gui/wxpython/gui_core/pyedit.py:603
+#: ../gui/wxpython/gui_core/pyedit.py:605
 msgid "Specify command line parameters for the script separated by spaces:"
 msgstr "Введите параметры командной строки для сценария через пробелы:"
 
-#: ../gui/wxpython/gui_core/pyedit.py:656
+#: ../gui/wxpython/gui_core/pyedit.py:658
 msgid "Open (Ctrl+O)"
 msgstr "Открыть (Ctrl+O)"
 
-#: ../gui/wxpython/gui_core/pyedit.py:657
+#: ../gui/wxpython/gui_core/pyedit.py:659
 msgid "Save (Ctrl+S)"
 msgstr "Сохранить (Ctrl+S)"
 
-#: ../gui/wxpython/gui_core/pyedit.py:658
+#: ../gui/wxpython/gui_core/pyedit.py:660
 msgid "Run (Ctrl+R)"
 msgstr "Выполнить (Ctrl+R)"
 
-#: ../gui/wxpython/gui_core/pyedit.py:660
+#: ../gui/wxpython/gui_core/pyedit.py:662
 msgid "Activate overwrite"
 msgstr "Включить перезапись"
 
-#: ../gui/wxpython/gui_core/pyedit.py:661
+#: ../gui/wxpython/gui_core/pyedit.py:663
 msgid "Deactivate overwrite"
 msgstr "Отключить перезапись"
 
-#: ../gui/wxpython/gui_core/pyedit.py:742
+#: ../gui/wxpython/gui_core/pyedit.py:876
 msgid "Simple Python Editor"
 msgstr "Простой редактор Python"
 
@@ -6194,7 +6194,7 @@ msgid "No vector map layer selected. Operation canceled."
 msgstr "Слой векторной карты не выбран. Операция отменена."
 
 #: ../gui/wxpython/gui_core/vselect.py:288 ../gui/wxpython/lmgr/frame.py:2318
-#: ../gui/wxpython/main_window/frame.py:2416
+#: ../gui/wxpython/main_window/frame.py:2426
 #: ../gui/wxpython/mapdisp/frame.py:711
 msgid "No map layer selected. Operation canceled."
 msgstr "Слой карты не выбран. Операция отменена."
@@ -6688,7 +6688,7 @@ msgstr ""
 "%s"
 
 #: ../gui/wxpython/iclass/frame.py:107 ../gui/wxpython/iclass/frame.py:1654
-#: ../gui/wxpython/lmgr/frame.py:1687 ../gui/wxpython/main_window/frame.py:1841
+#: ../gui/wxpython/lmgr/frame.py:1687 ../gui/wxpython/main_window/frame.py:1842
 msgid "Supervised Classification Tool"
 msgstr "Инструмент классификации с обучением"
 
@@ -7730,7 +7730,7 @@ msgstr "Добавить класс"
 msgid "Remove selected class"
 msgstr "Удалить выбранный класс"
 
-#: ../gui/wxpython/lmgr/frame.py:111 ../gui/wxpython/main_window/frame.py:127
+#: ../gui/wxpython/lmgr/frame.py:111 ../gui/wxpython/main_window/frame.py:128
 msgid "GRASS GIS"
 msgstr "ГИС GRASS"
 
@@ -7738,97 +7738,97 @@ msgstr "ГИС GRASS"
 msgid "There were some issues when loading menu or Tools tab:"
 msgstr "Возникли проблемы при загрузке меню или вкладки «Инструменты»:"
 
-#: ../gui/wxpython/lmgr/frame.py:183 ../gui/wxpython/main_window/frame.py:592
+#: ../gui/wxpython/lmgr/frame.py:183 ../gui/wxpython/main_window/frame.py:593
 msgid "Workspace Toolbar"
 msgstr "Панель инструментов проекта"
 
-#: ../gui/wxpython/lmgr/frame.py:187 ../gui/wxpython/main_window/frame.py:596
+#: ../gui/wxpython/lmgr/frame.py:187 ../gui/wxpython/main_window/frame.py:597
 msgid "Tools Toolbar"
 msgstr "Панель инструментов"
 
-#: ../gui/wxpython/lmgr/frame.py:189 ../gui/wxpython/main_window/frame.py:598
+#: ../gui/wxpython/lmgr/frame.py:189 ../gui/wxpython/main_window/frame.py:599
 msgid "3D view Toolbar"
 msgstr "Панель инструментов трёхмерного вида"
 
-#: ../gui/wxpython/lmgr/frame.py:362 ../gui/wxpython/main_window/frame.py:306
+#: ../gui/wxpython/lmgr/frame.py:362 ../gui/wxpython/main_window/frame.py:307
 msgid "Rename current Map Display"
 msgstr "Переименование текущего отображения карты"
 
-#: ../gui/wxpython/lmgr/frame.py:485 ../gui/wxpython/main_window/frame.py:432
+#: ../gui/wxpython/lmgr/frame.py:485 ../gui/wxpython/main_window/frame.py:433
 #, python-brace-format
 msgid "Map Display {number}"
 msgstr "Отображение карты {number}"
 
 #: ../gui/wxpython/lmgr/frame.py:583 ../gui/wxpython/lmgr/frame.py:903
-#: ../gui/wxpython/main_window/frame.py:530
-#: ../gui/wxpython/main_window/frame.py:1026
+#: ../gui/wxpython/main_window/frame.py:531
+#: ../gui/wxpython/main_window/frame.py:1027
 msgid "Close Map Display {}"
 msgstr "Закрыть отображение карты {}"
 
-#: ../gui/wxpython/lmgr/frame.py:639 ../gui/wxpython/main_window/frame.py:692
+#: ../gui/wxpython/lmgr/frame.py:639 ../gui/wxpython/main_window/frame.py:693
 msgid "Console"
 msgstr "Консоль"
 
-#: ../gui/wxpython/lmgr/frame.py:794 ../gui/wxpython/main_window/frame.py:921
+#: ../gui/wxpython/lmgr/frame.py:794 ../gui/wxpython/main_window/frame.py:922
 #, fuzzy
 msgid "Map Swipe Tool"
 msgstr "Map Swipe"
 
-#: ../gui/wxpython/lmgr/frame.py:846 ../gui/wxpython/main_window/frame.py:973
+#: ../gui/wxpython/lmgr/frame.py:846 ../gui/wxpython/main_window/frame.py:974
 msgid "Choose model to run"
 msgstr "Выберите модель для запуска"
 
-#: ../gui/wxpython/lmgr/frame.py:998 ../gui/wxpython/main_window/frame.py:1139
+#: ../gui/wxpython/lmgr/frame.py:998 ../gui/wxpython/main_window/frame.py:1140
 #, python-format
 msgid "Command '%s' not yet implemented in the WxGUI. Try adding it as a command layer instead."
 msgstr "Команда «%s» в WxGUI ещё не реализована. Попытайтесь добавить её в качестве командного слоя."
 
 #: ../gui/wxpython/lmgr/frame.py:1180 ../gui/wxpython/lmgr/frame.py:1858
-#: ../gui/wxpython/main_window/frame.py:1335
-#: ../gui/wxpython/main_window/frame.py:2012
+#: ../gui/wxpython/main_window/frame.py:1336
+#: ../gui/wxpython/main_window/frame.py:2022
 msgid "Selected map layer is not vector."
 msgstr "Выбранный слой карты не является векторным."
 
-#: ../gui/wxpython/lmgr/frame.py:1187 ../gui/wxpython/main_window/frame.py:1342
+#: ../gui/wxpython/lmgr/frame.py:1187 ../gui/wxpython/main_window/frame.py:1343
 msgid "Editing is allowed only for vector maps from the current mapset."
 msgstr "Редактирование возможно только для векторных карт из текущего набора."
 
-#: ../gui/wxpython/lmgr/frame.py:1214 ../gui/wxpython/main_window/frame.py:1369
+#: ../gui/wxpython/lmgr/frame.py:1214 ../gui/wxpython/main_window/frame.py:1370
 msgid "Choose script file to run"
 msgstr "Выбор файла сценария для запуска"
 
-#: ../gui/wxpython/lmgr/frame.py:1216 ../gui/wxpython/main_window/frame.py:1371
+#: ../gui/wxpython/lmgr/frame.py:1216 ../gui/wxpython/main_window/frame.py:1372
 msgid "Python script (*.py)|*.py|Bash script (*.sh)|*.sh"
 msgstr "Сценарий python (*.py)|*.py|Сценарий Bash (*.sh)|*.sh"
 
-#: ../gui/wxpython/lmgr/frame.py:1229 ../gui/wxpython/main_window/frame.py:1384
+#: ../gui/wxpython/lmgr/frame.py:1229 ../gui/wxpython/main_window/frame.py:1385
 #, python-format
 msgid "Script file '%s' doesn't exist. Operation canceled."
 msgstr "Файл сценария «%s» не существует. Операция отменена."
 
-#: ../gui/wxpython/lmgr/frame.py:1239 ../gui/wxpython/main_window/frame.py:1394
+#: ../gui/wxpython/lmgr/frame.py:1239 ../gui/wxpython/main_window/frame.py:1395
 #, python-format
 msgid "Script <%s> is not executable. Do you want to set the permissions that allows you to run this script (note that you must be the owner of the file)?"
 msgstr "Сценарий <%s> не является исполняемым. Установить разрешения для запуска этого сценария (для этого необходимо быть владельцем файла)?"
 
-#: ../gui/wxpython/lmgr/frame.py:1245 ../gui/wxpython/main_window/frame.py:1400
+#: ../gui/wxpython/lmgr/frame.py:1245 ../gui/wxpython/main_window/frame.py:1401
 msgid "Set permission?"
 msgstr "Установить разрешение?"
 
-#: ../gui/wxpython/lmgr/frame.py:1255 ../gui/wxpython/main_window/frame.py:1410
+#: ../gui/wxpython/lmgr/frame.py:1255 ../gui/wxpython/main_window/frame.py:1411
 msgid "Unable to set permission. Operation canceled."
 msgstr "Не удалось установить разрешение. Операция отменена."
 
-#: ../gui/wxpython/lmgr/frame.py:1268 ../gui/wxpython/main_window/frame.py:1423
+#: ../gui/wxpython/lmgr/frame.py:1268 ../gui/wxpython/main_window/frame.py:1424
 #, python-format
 msgid "Directory '%s' is not defined in GRASS_ADDON_PATH. Do you want add this directory to GRASS_ADDON_PATH?"
 msgstr "Каталог «%s» не определён в GRASS_ADDON_PATH. Добавить этот каталог в переменную GRASS_ADDON_PATH?"
 
-#: ../gui/wxpython/lmgr/frame.py:1272 ../gui/wxpython/main_window/frame.py:1427
+#: ../gui/wxpython/lmgr/frame.py:1272 ../gui/wxpython/main_window/frame.py:1428
 msgid "Update Addons path?"
 msgstr "Обновить путь размещения дополнительных компонентов?"
 
-#: ../gui/wxpython/lmgr/frame.py:1279 ../gui/wxpython/main_window/frame.py:1434
+#: ../gui/wxpython/lmgr/frame.py:1279 ../gui/wxpython/main_window/frame.py:1435
 #, python-format
 msgid "Launching script '%s'..."
 msgstr "Запуск сценария «%s»…"
@@ -7837,11 +7837,11 @@ msgstr "Запуск сценария «%s»…"
 msgid "No location/mapset provided. Operation canceled."
 msgstr "Не предоставлена область/набор. Операция отменена."
 
-#: ../gui/wxpython/lmgr/frame.py:1334 ../gui/wxpython/main_window/frame.py:1489
+#: ../gui/wxpython/lmgr/frame.py:1334 ../gui/wxpython/main_window/frame.py:1490
 msgid "No mapset provided. Operation canceled."
 msgstr "Не предоставлен набор. Операция отменена."
 
-#: ../gui/wxpython/lmgr/frame.py:1369 ../gui/wxpython/main_window/frame.py:1524
+#: ../gui/wxpython/lmgr/frame.py:1369 ../gui/wxpython/main_window/frame.py:1525
 #, python-format
 msgid ""
 "Working directory changed to:\n"
@@ -7850,67 +7850,67 @@ msgstr ""
 "Рабочий каталог изменён на:\n"
 "«%s»"
 
-#: ../gui/wxpython/lmgr/frame.py:1375 ../gui/wxpython/main_window/frame.py:1530
+#: ../gui/wxpython/lmgr/frame.py:1375 ../gui/wxpython/main_window/frame.py:1531
 msgid "Changes current working directory for this GUI."
 msgstr "Изменяет текущий рабочий каталог для этого графического интерфейса."
 
-#: ../gui/wxpython/lmgr/frame.py:1376 ../gui/wxpython/main_window/frame.py:1531
+#: ../gui/wxpython/lmgr/frame.py:1376 ../gui/wxpython/main_window/frame.py:1532
 msgid "Usage: cd [directory]"
 msgstr "Использование: cd [каталог]"
 
-#: ../gui/wxpython/lmgr/frame.py:1377 ../gui/wxpython/main_window/frame.py:1532
+#: ../gui/wxpython/lmgr/frame.py:1377 ../gui/wxpython/main_window/frame.py:1533
 msgid "Without parameters it opens a dialog."
 msgstr "Без указания параметров выводится диалоговое окно."
 
-#: ../gui/wxpython/lmgr/frame.py:1383 ../gui/wxpython/main_window/frame.py:1538
+#: ../gui/wxpython/lmgr/frame.py:1383 ../gui/wxpython/main_window/frame.py:1539
 msgid "If ~ (tilde) is present as the first directory on the path, it is replaced by user's home directory."
 msgstr "Если в качестве первого каталога пути указана ~ (тильда), то она заменяется домашним каталогом пользователя."
 
-#: ../gui/wxpython/lmgr/frame.py:1402 ../gui/wxpython/main_window/frame.py:1557
+#: ../gui/wxpython/lmgr/frame.py:1402 ../gui/wxpython/main_window/frame.py:1558
 msgid "More than one parameter provided."
 msgstr "Указано больше одного параметра."
 
-#: ../gui/wxpython/lmgr/frame.py:1423 ../gui/wxpython/main_window/frame.py:1578
+#: ../gui/wxpython/lmgr/frame.py:1423 ../gui/wxpython/main_window/frame.py:1579
 msgid "Choose a working directory"
 msgstr "Выбор рабочего каталога"
 
-#: ../gui/wxpython/lmgr/frame.py:1472 ../gui/wxpython/main_window/frame.py:1627
+#: ../gui/wxpython/lmgr/frame.py:1472 ../gui/wxpython/main_window/frame.py:1628
 msgid "System Info"
 msgstr "Информация о системе"
 
-#: ../gui/wxpython/lmgr/frame.py:1488 ../gui/wxpython/main_window/frame.py:1643
+#: ../gui/wxpython/lmgr/frame.py:1488 ../gui/wxpython/main_window/frame.py:1644
 msgid "GRASS version"
 msgstr "Версия GRASS"
 
-#: ../gui/wxpython/lmgr/frame.py:1490 ../gui/wxpython/main_window/frame.py:1645
+#: ../gui/wxpython/lmgr/frame.py:1490 ../gui/wxpython/main_window/frame.py:1646
 msgid "Code revision"
 msgstr "Ревизия кода"
 
-#: ../gui/wxpython/lmgr/frame.py:1492 ../gui/wxpython/main_window/frame.py:1647
+#: ../gui/wxpython/lmgr/frame.py:1492 ../gui/wxpython/main_window/frame.py:1648
 msgid "Build date"
 msgstr "Дата сборки"
 
-#: ../gui/wxpython/lmgr/frame.py:1494 ../gui/wxpython/main_window/frame.py:1649
+#: ../gui/wxpython/lmgr/frame.py:1494 ../gui/wxpython/main_window/frame.py:1650
 msgid "Build platform"
 msgstr "Платформа сборки"
 
-#: ../gui/wxpython/lmgr/frame.py:1506 ../gui/wxpython/main_window/frame.py:1661
+#: ../gui/wxpython/lmgr/frame.py:1506 ../gui/wxpython/main_window/frame.py:1662
 msgid "Platform"
 msgstr "Платформа"
 
-#: ../gui/wxpython/lmgr/frame.py:1566 ../gui/wxpython/main_window/frame.py:1721
+#: ../gui/wxpython/lmgr/frame.py:1566 ../gui/wxpython/main_window/frame.py:1722
 msgid "Close all Map Displays"
 msgstr "Закрыть все отображения карты"
 
-#: ../gui/wxpython/lmgr/frame.py:1584 ../gui/wxpython/main_window/frame.py:1739
+#: ../gui/wxpython/lmgr/frame.py:1584 ../gui/wxpython/main_window/frame.py:1740
 msgid "Enter new name:"
 msgstr "Введите новое имя:"
 
-#: ../gui/wxpython/lmgr/frame.py:1585 ../gui/wxpython/main_window/frame.py:1740
+#: ../gui/wxpython/lmgr/frame.py:1585 ../gui/wxpython/main_window/frame.py:1741
 msgid "Rename Map Display"
 msgstr "Переименование отображения карты"
 
-#: ../gui/wxpython/lmgr/frame.py:1679 ../gui/wxpython/main_window/frame.py:1833
+#: ../gui/wxpython/lmgr/frame.py:1679 ../gui/wxpython/main_window/frame.py:1834
 #, python-format
 msgid ""
 "Unable to launch \"Supervised Classification Tool\".\n"
@@ -7921,35 +7921,35 @@ msgstr ""
 "\n"
 "Причина: %s"
 
-#: ../gui/wxpython/lmgr/frame.py:1726 ../gui/wxpython/main_window/frame.py:1880
+#: ../gui/wxpython/lmgr/frame.py:1726 ../gui/wxpython/main_window/frame.py:1881
 msgid "Unable to start Timeline Tool."
 msgstr "Не удалось запустить инструмент временной шкалы."
 
-#: ../gui/wxpython/lmgr/frame.py:1736 ../gui/wxpython/main_window/frame.py:1890
+#: ../gui/wxpython/lmgr/frame.py:1736 ../gui/wxpython/main_window/frame.py:1891
 msgid "Unable to start Temporal Plot Tool."
 msgstr "Не удалось запустить инструмент отображения временных данных."
 
-#: ../gui/wxpython/lmgr/frame.py:1906 ../gui/wxpython/main_window/frame.py:2058
+#: ../gui/wxpython/lmgr/frame.py:1906 ../gui/wxpython/main_window/frame.py:2068
 msgid "Add selected map layers into layer tree"
 msgstr "Добавить выбранные слои карты в дерево слоёв"
 
 #: ../gui/wxpython/lmgr/frame.py:1938 ../gui/wxpython/lmgr/frame.py:1976
-#: ../gui/wxpython/main_window/frame.py:2090
-#: ../gui/wxpython/main_window/frame.py:2128
+#: ../gui/wxpython/main_window/frame.py:2100
+#: ../gui/wxpython/main_window/frame.py:2138
 #, python-format
 msgid "Unsupported map layer type <%s>."
 msgstr "Неподдерживаемый тип слоёв карты <%s>."
 
-#: ../gui/wxpython/lmgr/frame.py:2119 ../gui/wxpython/main_window/frame.py:2252
+#: ../gui/wxpython/lmgr/frame.py:2119 ../gui/wxpython/main_window/frame.py:2262
 msgid "Note that cell values can only be displayed for regions of less than 10,000 cells."
 msgstr "Значения ячейки могут отображаться только для фрагментов, содержащих не более 10000 ячеек."
 
 #: ../gui/wxpython/lmgr/frame.py:2214 ../gui/wxpython/lmgr/layertree.py:2128
-#: ../gui/wxpython/main_window/frame.py:2328
+#: ../gui/wxpython/main_window/frame.py:2338
 msgid "opacity:"
 msgstr "непрозрачность:"
 
-#: ../gui/wxpython/lmgr/frame.py:2223 ../gui/wxpython/main_window/frame.py:2337
+#: ../gui/wxpython/lmgr/frame.py:2223 ../gui/wxpython/main_window/frame.py:2347
 #, python-format
 msgid ""
 "Do you want to remove map layer(s)\n"
@@ -7960,23 +7960,23 @@ msgstr ""
 "%s\n"
 "из дерева слоёв?"
 
-#: ../gui/wxpython/lmgr/frame.py:2228 ../gui/wxpython/main_window/frame.py:2342
+#: ../gui/wxpython/lmgr/frame.py:2228 ../gui/wxpython/main_window/frame.py:2352
 msgid "Do you want to remove selected map layer(s) from layer tree?"
 msgstr "Удалить выбранный слой (слои) дерева карты?"
 
-#: ../gui/wxpython/lmgr/frame.py:2234 ../gui/wxpython/main_window/frame.py:2348
+#: ../gui/wxpython/lmgr/frame.py:2234 ../gui/wxpython/main_window/frame.py:2358
 msgid "Remove map layer"
 msgstr "Удалить слой карты"
 
-#: ../gui/wxpython/lmgr/frame.py:2292 ../gui/wxpython/main_window/frame.py:2390
+#: ../gui/wxpython/lmgr/frame.py:2292 ../gui/wxpython/main_window/frame.py:2400
 msgid "Quit GRASS GUI"
 msgstr "Завершить работу графического интерфейса GRASS"
 
-#: ../gui/wxpython/lmgr/frame.py:2330 ../gui/wxpython/main_window/frame.py:2428
+#: ../gui/wxpython/lmgr/frame.py:2330 ../gui/wxpython/main_window/frame.py:2438
 msgid "Display resolution is currently not constrained to computational settings. It's suggested to constrain map to region geometry. Do you want to constrain the resolution?"
 msgstr "Разрешение отображения в данный момент не ограничено параметрами вычисления. Рекомендуется ограничить карту геометрией фрагмента. Ограничить разрешение?"
 
-#: ../gui/wxpython/lmgr/frame.py:2341 ../gui/wxpython/main_window/frame.py:2439
+#: ../gui/wxpython/lmgr/frame.py:2341 ../gui/wxpython/main_window/frame.py:2449
 msgid "Constrain map to region geometry?"
 msgstr "Ограничить карту геометрией фрагмента?"
 
@@ -8949,14 +8949,19 @@ msgstr "Файл <%s> не найден."
 msgid "WKT string missing."
 msgstr "Отсутствует строка в формате WKT."
 
-#: ../gui/wxpython/main_window/frame.py:160
+#: ../gui/wxpython/main_window/frame.py:161
 msgid "There were some issues when loading menu or Tools:"
 msgstr "При загрузке меню или панелей управления возникли проблемы:"
 
-#: ../gui/wxpython/main_window/frame.py:1449
+#: ../gui/wxpython/main_window/frame.py:1450
 #, fuzzy
 msgid "No project provided. Operation canceled."
 msgstr "Не предоставлен набор. Операция отменена."
+
+#: ../gui/wxpython/main_window/frame.py:2000
+#, fuzzy
+msgid "Code editor"
+msgstr "Редактор Python"
 
 #: ../gui/wxpython/mapdisp/frame.py:171
 #, python-format
